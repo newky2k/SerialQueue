@@ -1,13 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata>
-        <id>SerialQueue</id>
+        <id>SerialQueue.NetStandard</id>
         <version>1.0.0.1</version>
         <authors>Orion Edwards</authors>
         <licenseUrl>https://raw.githubusercontent.com/borland/SerialQueue/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/borland/SerialQueue</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>C# Implementation of a SerialQueue in the style of Apple's Grand Central Dispatch queues.</description>
+        <description>C# Implementation of a SerialQueue in the style of Apple's Grand Central Dispatch queues - rebuilt as a .Net Standard 1.2 library</description>
         <copyright>Orion Edwards 2015</copyright>
     </metadata>
+    <files>
+        <file src="SerialQueue\bin\Release\SerialQueue.dll" target="lib\netstandard1.2\SerialQueue.dll" />
+    </files>
 </package>
