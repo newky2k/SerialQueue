@@ -1,25 +1,32 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <FileVersion>2.1.0.0</FileVersion>
-    <LangVersion>8.0</LangVersion>
-    <Version>2.1.0</Version>
-    <Authors>Orion Edwards</Authors>
-    <Company />
-    <PackageLicenseUrl></PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/borland/SerialQueue</PackageProjectUrl>
-    <Description>C# Implementation of a SerialQueue in the style of Apple's Grand Central Dispatch queues.</Description>
-    <Copyright>Orion Edwards 2020</Copyright>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0;net462;net6.0;net8.0;</TargetFrameworks>
+		<AssemblyVersion>2.1.0.0</AssemblyVersion>
+		<FileVersion>2.1.0.0</FileVersion>
+		<Version>2.1.0</Version>
+		<Authors>Orion Edwards</Authors>
+		<Company />
+		<PackageLicenseUrl></PackageLicenseUrl>
+		<PackageProjectUrl>https://github.com/newky2k/SerialQueue</PackageProjectUrl>
+		<Description>C# Implementation of a SerialQueue in the style of Apple's Grand Central Dispatch queues.</Description>
+		<Copyright>Orion Edwards 2020</Copyright>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageId>SerialQueue.NetStandard</PackageId>
+		<Title>SerialQueue.NetStandard</Title>
+		<PackageReadmeFile>readme.md</PackageReadmeFile>
+		<Product>$(AssemblyName) ($(TargetFramework))</Product>
+		<Nullable>disable</Nullable>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <None Include="..\LICENSE">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-  </ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
 
+	<ItemGroup>
+		<None Include="../readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
 </Project>

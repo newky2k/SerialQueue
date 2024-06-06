@@ -1,7 +1,7 @@
 # SerialQueue
 C# Implementation of a SerialQueue in the style of Apple's Grand Central Dispatch queues.
 
-Provided as a Nuget package built for Net462 and NetStandard20
+Provided as a Nuget package built for NetStandard20, Net462 and .NET 6.0 and .NET 8.0
 
 ## What is a Serial Queue?
 
