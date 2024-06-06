@@ -1,17 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29728.190
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.34928.147
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4A3251BF-17F6-4DA5-9E70-E610F68F3676}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".ci", ".ci", "{4A3251BF-17F6-4DA5-9E70-E610F68F3676}"
 	ProjectSection(SolutionItems) = preProject
+		azure-pipelines-mergetest.yml = azure-pipelines-mergetest.yml
+		azure-pipelines-release.yml = azure-pipelines-release.yml
+		Directory.Build.props = Directory.Build.props
 		LICENSE = LICENSE
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialQueue", "src\SerialQueue.csproj", "{D8132678-26C3-4540-BA51-631C560ABE2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerialQueue.Test", "tests\SerialQueue.Test.csproj", "{838A29EA-225F-483A-A3A7-DFF261D3FEE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SerialQueue.Test", "tests\SerialQueue.Test.csproj", "{369F8D61-5466-48AE-9E22-D54E1FE5ABE4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +26,10 @@ Global
 		{D8132678-26C3-4540-BA51-631C560ABE2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D8132678-26C3-4540-BA51-631C560ABE2F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D8132678-26C3-4540-BA51-631C560ABE2F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{838A29EA-225F-483A-A3A7-DFF261D3FEE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{838A29EA-225F-483A-A3A7-DFF261D3FEE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{838A29EA-225F-483A-A3A7-DFF261D3FEE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{838A29EA-225F-483A-A3A7-DFF261D3FEE6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{369F8D61-5466-48AE-9E22-D54E1FE5ABE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{369F8D61-5466-48AE-9E22-D54E1FE5ABE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{369F8D61-5466-48AE-9E22-D54E1FE5ABE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{369F8D61-5466-48AE-9E22-D54E1FE5ABE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
