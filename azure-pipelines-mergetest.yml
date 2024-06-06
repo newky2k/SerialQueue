@@ -9,27 +9,19 @@ pool:
   vmImage: 'windows-latest'
 
 variables:
-- group: titan
-- name: solution
-  value: '**/*.sln'
-- name: buildPlatform
-  value: 'Any CPU'
-- name: buildConfiguration
-  value: 'Release'
+  solution: '**/*.sln'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
 
-steps:
-
+steps:  
 - task: NuGetToolInstaller@1
-  displayName: Install Lastest Nuget
+  displayName: Install Latest Nuget
 
 - task: DotNetCoreCLI@2
-  displayName: dotnet restore
   inputs:
-    command: restore
-    projects: '$(solution)'
-    feedsToUse: 'select'
-    vstsFeed: '2ee62add-e34e-4fc0-aa13-bc3a8223e9b9'
-
+    command: 'restore'
+    projects: '*.sln'
+  
 - task: DotNetCoreCLI@2
   displayName: dotnet build
   inputs:
