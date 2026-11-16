@@ -3,12 +3,17 @@
    <GenerateDocumentationFile>true</GenerateDocumentationFile>
    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+   <PackageIcon>DSIcon.png</PackageIcon>
    <RepositoryUrl>https://github.com/newky2k/SerialQueue</RepositoryUrl>
    <RepositoryType>git</RepositoryType>
    <ImplicitUsings>enable</ImplicitUsings>
    <LangVersion>Latest</LangVersion>
 	 <NoWarn>1701;1702;CS8002;CS8653;CS8600;CS1591;CS8603;CS8602;CS8765;CS8618;CS8604;</NoWarn>
  </PropertyGroup>
+
+  <ItemGroup Condition=" '$(IsPackable)' != 'false' ">
+    <None Include="$(MSBuildThisFileDirectory)DSIcon.png" Pack="true" PackagePath="\" Visible="false" />
+  </ItemGroup>
 
   <PropertyGroup Condition=" '$(Configuration)'=='Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -24,7 +29,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition=" '$(Configuration)'=='Release'">
-	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All" />
+	  <PackageReference Include="Microsoft.SourceLink.GitHub" Version="11.0.100" PrivateAssets="All" />
   </ItemGroup>
 
   <PropertyGroup Condition="'$(TF_BUILD)' == 'true'">
